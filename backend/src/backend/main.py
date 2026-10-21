@@ -7,7 +7,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.routes.auth_router import router as auth_router
 from backend.routes.health_router import router as health_router
 
+from backend.logging_config import configure_uvicorn_logging
 
+
+
+configure_uvicorn_logging()
 logger = logging.getLogger(__name__)
 
 app = FastAPI(

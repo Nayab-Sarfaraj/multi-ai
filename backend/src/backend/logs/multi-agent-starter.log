@@ -1,0 +1,4 @@
+2026-10-22 01:38:12,804 - INFO     - [main.py:36] - backend.main - [session=-] [txn=-] [agent=-] [user=-] [route=-] - Application startup configured.
+2026-10-22 01:38:12,806 - INFO     - [server.py:103] - uvicorn.error - [session=-] [txn=-] [agent=-] [user=-] [route=-] - Started server process [25248]
+2026-10-22 01:38:12,807 - INFO     - [on.py:48] - uvicorn.error - [session=-] [txn=-] [agent=-] [user=-] [route=-] - Waiting for application startup.
+2026-10-22 01:38:12,813 - INFO     - [on.py:62] - uvicorn.error - [session=-] [txn=-] [agent=-] [user=-] [route=-] - Application startup complete.
