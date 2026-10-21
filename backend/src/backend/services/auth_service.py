@@ -1,9 +1,9 @@
 import json
 from typing import Optional
 
-from app.memory.redis_memory import RedisMemoryService
-from app.models.auth_models import LoginRequest, RegisterRequest, UserResponse
-from app.utils.security import hash_password, verify_password
+from backend.memory.redis_memory import RedisMemoryService
+from backend.models.auth_model import LoginRequest, RegisterRequest, UserResponse
+from backend.utils.security import hash_password, verify_password
 
 class AuthService:
     def __init__(self,memory_service: RedisMemoryService):

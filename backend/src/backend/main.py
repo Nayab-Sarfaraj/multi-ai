@@ -1,12 +1,11 @@
 import logging
-import os
-from app.config.settings import settings
+
+from backend.config.settings import settings
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers.auth_router import router as auth_router
-from app.routers.health_router import router as health_router
-
+from backend.routes.auth_router import router as auth_router
+from backend.routes.health_router import router as health_router
 
 
 logger = logging.getLogger(__name__)

@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-from app.config.settings import settings
-from app.memory.redis_memory import RedisMemoryService
-from app.services.search_service import SearchService
+from backend.config.settings import settings
+from backend.memory.redis_memory import RedisMemoryService
+from backend.services.search_service import SearchService
 
 router = APIRouter(tags=["health"])
 

@@ -2,11 +2,11 @@ import logging
 
 from fastapi import APIRouter, HTTPException, status
 
-from app.config.settings import settings
-from app.memory.redis_memory import RedisMemoryService
-from app.models.auth_models import LoginRequest, RegisterRequest, TokenResponse, UserResponse
-from app.services.auth_service import AuthService
-from app.services.token_service import TokenService
+from backend.config.settings import settings
+from backend.memory.redis_memory import RedisMemoryService
+from backend.models.auth_model import LoginRequest, RegisterRequest, TokenResponse, UserResponse
+from backend.services.auth_service import AuthService
+from backend.services.token_service import TokenService
 
 
 router = APIRouter(prefix=settings.api_prefix + "/auth", tags=["auth"])

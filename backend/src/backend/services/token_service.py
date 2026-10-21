@@ -3,7 +3,7 @@ from typing import Any, Dict
 
 import jwt
 
-from app.config.settings import settings
+from backend.config.settings import settings
 
 class TokenService:
     def create_access_token(self, subject: str) -> str:
