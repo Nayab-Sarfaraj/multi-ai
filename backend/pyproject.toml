@@ -1,0 +1,30 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nayab-Sarfaraj", email = "nayabsarfaraj@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "elasticsearch>=9.5.1",
+    "email-validator>=2.3.0",
+    "fastapi>=0.151.0",
+    "httpx>=0.28.1",
+    "langchain>=1.4.6",
+    "langfuse>=5.0.2",
+    "langgraph>=1.2.16",
+    "passlib>=1.7.4",
+    "pyjwt>=2.15.1",
+    "python-dotenv>=1.2.4",
+    "redis>=8.1.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
